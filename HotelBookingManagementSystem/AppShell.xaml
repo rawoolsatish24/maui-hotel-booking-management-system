@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="HotelBookingManagementSystem.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:HotelBookingManagementSystem"
+    Shell.BackgroundColor="{DynamicResource LightColor}"
+    Shell.TitleColor="{DynamicResource DarkColor}"
+    Shell.TabBarForegroundColor="{DynamicResource DarkColor}"
+    Shell.TabBarBackgroundColor="{DynamicResource TabBarBackgroundColor}"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar x:Name="appTabBar">
+        <Tab x:Name="tabMainPage" Title="Login/Signup">
+            <ShellContent Title="Login/Signup" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        </Tab>
+        <Tab x:Name="tabNewBooking" Title="New Booking">
+            <ShellContent Title="New Booking" ContentTemplate="{DataTemplate local:NewBooking}" Route="NewBooking" />
+        </Tab>
+        <Tab x:Name="tabBookingsHistory" Title="Bookings History">
+            <ShellContent Title="Bookings History" ContentTemplate="{DataTemplate local:BookingsHistory}" Route="BookingsHistory" />
+        </Tab>
+        <Tab x:Name="tabMenuPage" Title="Menu">
+            <ShellContent Title="Menu" ContentTemplate="{DataTemplate local:MenuPage}" Route="MenuPage" />
+        </Tab>
+        <Tab x:Name="tabAdminPage" Title="Admin">
+            <ShellContent Title="Admin" ContentTemplate="{DataTemplate local:AdminPage}" Route="AdminPage" />
+        </Tab>
+        <Tab x:Name="tabAboutPage" Title="About">
+            <ShellContent Title="About" ContentTemplate="{DataTemplate local:AboutPage}" Route="AboutPage" />
+        </Tab>
+        <Tab x:Name="tabLogoutPage" Title="Logout">
+            <ShellContent Title="Logout" ContentTemplate="{DataTemplate local:LogoutPage}" Route="LogoutPage" />
+        </Tab>
+    </TabBar>
+    
+</Shell>

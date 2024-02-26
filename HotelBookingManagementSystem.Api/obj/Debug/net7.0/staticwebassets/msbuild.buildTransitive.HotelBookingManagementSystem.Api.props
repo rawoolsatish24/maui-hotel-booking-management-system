@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\HotelBookingManagementSystem.Api.props" />
+</Project>

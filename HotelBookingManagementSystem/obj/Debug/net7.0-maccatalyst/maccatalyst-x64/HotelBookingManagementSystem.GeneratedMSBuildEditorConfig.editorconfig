@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net7.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HotelBookingManagementSystem
+build_property.ProjectDir = D:\Studypool\MAUIHotelBookingManagementSystem\08Dec23\HotelBookingManagementSystem\
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/AboutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.AboutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AboutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AboutPage.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/AdminPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.AdminPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AdminPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AdminPage.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/BookingsHistory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.BookingsHistory.xaml
+build_metadata.AdditionalFiles.TargetPath = BookingsHistory.xaml
+build_metadata.AdditionalFiles.RelativePath = BookingsHistory.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/LogoutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.LogoutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LogoutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LogoutPage.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/MenuPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.MenuPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MenuPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MenuPage.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/NewBooking.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.NewBooking.xaml
+build_metadata.AdditionalFiles.TargetPath = NewBooking.xaml
+build_metadata.AdditionalFiles.RelativePath = NewBooking.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/Resources/Styles/Dark.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.Resources.Styles.Dark.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Dark.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Dark.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/Resources/Styles/Light.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.Resources.Styles.Light.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Light.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Light.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/Resources/Styles/Pink.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.Resources.Styles.Pink.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Pink.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Pink.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/Resources/Styles/Red.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.Resources.Styles.Red.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Red.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Red.xaml
+
+[D:/Studypool/MAUIHotelBookingManagementSystem/08Dec23/HotelBookingManagementSystem/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HotelBookingManagementSystem.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HotelBookingManagementSystem.MenuPage"
+             Title="Menu">
+
+    <ScrollView>
+        <Grid RowDefinitions="Auto, Auto, *, *, Auto">
+            <Label Grid.Row="0" Text="Menu" TextColor="{DynamicResource DarkColor}" FontAttributes="Bold" FontSize="24" HorizontalOptions="Center" Margin="0, 20, 0, 20" />
+
+            <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Color Scheme:" FontAttributes="Bold" VerticalOptions="Center" Margin="0, 0, 10, 0" />
+                <Picker x:Name="ColorSchemePicker" SelectedIndexChanged="OnColorSchemeSelected">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Light</x:String>
+                            <x:String>Dark</x:String>
+                            <x:String>Red</x:String>
+                            <x:String>Pink</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label x:Name="lblAccountCreatedOn" Text="   |   Account Created On: " FontAttributes="Bold" VerticalOptions="Center" Margin="0, 0, 10, 0" />
+            </StackLayout>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" Padding="20">
+                    <Label Text="Personal Details" TextColor="{DynamicResource DarkColor}" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,20" />
+                    <Entry Placeholder="Full Name" x:Name="txtAFullName" MaxLength="50" Style="{StaticResource DefaultTextBoxStyle}" />
+                    <Entry Placeholder="Email" x:Name="txtAEmailId" MaxLength="50" Style="{StaticResource DefaultTextBoxStyle}" />
+                    <Entry Placeholder="Mobile" x:Name="txtAMobile" MaxLength="10" Style="{StaticResource DefaultTextBoxStyle}" />
+                    <Button x:Name="btnAUpdate" Text="Update" Clicked="btnAUpdate_Clicked" Style="{StaticResource SubmitButtonStyle}" HorizontalOptions="Center" Margin="0,20,0,20" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" Padding="20">
+                    <Label Text="Password" FontSize="Medium" TextColor="{DynamicResource DarkColor}" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,20" />
+                    <Entry Placeholder="Old Password" x:Name="txtPOPassword" IsPassword="True" MaxLength="20" Style="{StaticResource DefaultTextBoxStyle}" />
+                    <Entry Placeholder="New Password" x:Name="txtPPassword" IsPassword="True" MaxLength="20" Style="{StaticResource DefaultTextBoxStyle}" />
+                    <Entry Placeholder="Confirm Password" x:Name="txtPCPassword" IsPassword="True" MaxLength="20" Style="{StaticResource DefaultTextBoxStyle}" />
+                    <Button Text="Update" x:Name="btnPUpdate" Clicked="btnPUpdate_Clicked" Style="{StaticResource SubmitButtonStyle}" HorizontalOptions="Center" Margin="0,20,0,20" />
+                </StackLayout>
+            </Grid>
+            
+            <StackLayout Grid.Row="3">
+                <Button Text="Delete Account" x:Name="btnDeleteAccount" Clicked="btnDeleteAccount_Clicked" Style="{StaticResource ResetButtonStyle}" HorizontalOptions="Center" Margin="0,0,0,20" />
+                <Label Text="" x:Name="lblStatus" TextColor="Red" FontAttributes="Bold" FontSize="Small" HorizontalOptions="Center" />
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

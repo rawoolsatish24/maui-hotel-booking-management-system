@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HotelBookingManagementSystem.NewBooking"
+             Title="New Booking">
+
+    <ScrollView>
+        <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto">
+            <Label Grid.Row="0" Text="New Booking" TextColor="{DynamicResource DarkColor}" FontAttributes="Bold" FontSize="24" HorizontalOptions="Center" Margin="0, 20, 0, 20" />
+
+            <StackLayout Grid.Row="1" Orientation="Horizontal" Margin="10" HorizontalOptions="Center">
+                <Label Text="Type Of Room:" FontAttributes="Bold" VerticalOptions="Center" Margin="0, 0, 10, 0" />
+                <Picker x:Name="pkrTypeOfRoom" WidthRequest="250" SelectedIndexChanged="pkrTypeOfRoom_SelectedIndexChanged">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Select Type Of Room</x:String>
+                            <x:String>Deluxe Room : $420 : 2 Persons</x:String>
+                            <x:String>Luxury Room : $250 : 3 Persons</x:String>
+                            <x:String>Single Room : $150 : 4 Persons</x:String>
+                            <x:String>Guest House : $180 : 5 Persons</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Orientation="Horizontal" Margin="10" HorizontalOptions="Center">
+                <Label Text="Bedding Type:" FontAttributes="Bold" VerticalOptions="Center" Margin="0, 0, 10, 0" />
+                <Picker x:Name="pkrBeddingType" WidthRequest="200" SelectedIndexChanged="pkrBeddingType_SelectedIndexChanged">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Select Bedding Type</x:String>
+                            <x:String>-None : 0.00x</x:String>
+                            <x:String>Quad : 10.00x</x:String>
+                            <x:String>Triple : 9.00x</x:String>
+                            <x:String>Double : 8.00x</x:String>
+                            <x:String>Single : 7.00x</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" Orientation="Horizontal" Margin="10" HorizontalOptions="Center">
+                <Entry Placeholder="No. Of Adults" TextChanged="txtNoOfAdults_TextChanged" Keyboard="Numeric" WidthRequest="150" Margin="0, 0, 5, 0" x:Name="txtNoOfAdults" VerticalOptions="Center" MaxLength="2" Style="{StaticResource DefaultTextBoxStyle}" />
+                <Entry Placeholder="No. Of Childs" TextChanged="txtNoOfChilds_TextChanged" Keyboard="Numeric" WidthRequest="150" Margin="5, 0, 0, 0" x:Name="txtNoOfChilds" VerticalOptions="Center" MaxLength="2" Style="{StaticResource DefaultTextBoxStyle}" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="4" Orientation="Horizontal" Margin="10" HorizontalOptions="Center">
+                <Label Text="Check-In:" FontAttributes="Bold" VerticalOptions="Center" Margin="0, 0, 10, 0" />
+                <DatePicker x:Name="dtpCheckIn" DateSelected="dtpCheckIn_DateSelected" WidthRequest="150" HorizontalOptions="Center" />
+                <Label Text="  ---  Check-Out:" FontAttributes="Bold" VerticalOptions="Center" Margin="0, 0, 10, 0" />
+                <DatePicker x:Name="dtpCheckOut" DateSelected="dtpCheckOut_DateSelected" WidthRequest="150" HorizontalOptions="Center" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="5" Margin="10" HorizontalOptions="Center">
+                <Label Text="------------------------------------------" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center" />
+                <Label x:Name="lblNetAmount" Text="Net Amount: -NILL" TextColor="Green" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center" />
+                <Label Text="------------------------------------------" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="6" Orientation="Horizontal" Margin="10" HorizontalOptions="Center">
+                <Button Text="Reset Form" x:Name="btnResetForm" Clicked="btnResetForm_Clicked" FontSize="Small" Style="{StaticResource ResetButtonStyle}" HorizontalOptions="Center" Margin="0,0,5,0" />
+                <Button Text="Confirm Booking" x:Name="btnConfirmBooking" Clicked="btnConfirmBooking_Clicked" FontSize="Small" Style="{StaticResource SubmitButtonStyle}" HorizontalOptions="Center" Margin="5,0,0,0" />
+            </StackLayout>
+
+            <Label Grid.Row="7" Text="" x:Name="lblStatus" Margin="10" TextColor="Red" FontAttributes="Bold" FontSize="Small" HorizontalOptions="Center" />
+        </Grid>
+    </ScrollView>
+    
+</ContentPage>

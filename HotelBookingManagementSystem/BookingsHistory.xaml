@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HotelBookingManagementSystem.BookingsHistory"
+             Title="Bookings History">
+
+    <StackLayout Padding="10">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="10">
+            <Button x:Name="btnRefreshData" Text="Refresh data" Clicked="btnRefreshData_Clicked" WidthRequest="120" TextColor="{DynamicResource DarkColor}" BackgroundColor="{DynamicResource LightColor}" FontAttributes="Bold" />
+        </StackLayout>
+        <Frame CornerRadius="5" BackgroundColor="{DynamicResource LightColor}" Padding="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Id" TextColor="{DynamicResource DarkColor}" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="1" Text="Room Type" TextColor="{DynamicResource DarkColor}" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="2" Text="Bedding Type" TextColor="{DynamicResource DarkColor}" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="3" Text="Adults" TextColor="{DynamicResource DarkColor}" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="4" Text="Childs" TextColor="{DynamicResource DarkColor}" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="5" Text="Check-In" TextColor="{DynamicResource DarkColor}" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="6" Text="Check-Out" TextColor="{DynamicResource DarkColor}" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="7" Text="Price" TextColor="{DynamicResource DarkColor}" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="8" Text="Status" TextColor="{DynamicResource DarkColor}" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="9" Text="Booked On" TextColor="{DynamicResource DarkColor}" FontAttributes="Bold" HorizontalOptions="Start" />
+            </Grid>
+        </Frame>
+        <ListView x:Name="lsBookings" HasUnevenRows="True" SeparatorColor="Green" ItemTapped="lsBookings_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.5*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="1.5*" />
+                                    <ColumnDefinition Width="0.5*" />
+                                    <ColumnDefinition Width="0.5*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding BookingId}" TextColor="Indigo" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding RoomType}" TextColor="Indigo" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="2" Text="{Binding BeddingType}" TextColor="Indigo" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="3" Text="{Binding NoOfAdults}" TextColor="Indigo" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="4" Text="{Binding NoOfChilds}" TextColor="Indigo" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="5" Text="{Binding CheckIn, StringFormat='{0:dd MMM, yyyy}'}" TextColor="Indigo" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="6" Text="{Binding CheckOut, StringFormat='{0:dd MMM, yyyy}'}" TextColor="Indigo" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="7" Text="{Binding NetAmount, StringFormat='${0:F2}'}" TextColor="Indigo" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="8" Text="{Binding Status}" TextColor="Orange" HorizontalOptions="Start">
+                                    <Label.Triggers>
+                                        <DataTrigger TargetType="Label" Binding="{Binding Status}" Value="APPROVED">
+                                            <Setter Property="TextColor" Value="Green" />
+                                        </DataTrigger>
+                                        <DataTrigger TargetType="Label" Binding="{Binding Status}" Value="REJECTED">
+                                            <Setter Property="TextColor" Value="Red" />
+                                        </DataTrigger>
+                                        <DataTrigger TargetType="Label" Binding="{Binding Status}" Value="CANCELED">
+                                            <Setter Property="TextColor" Value="Grey" />
+                                        </DataTrigger>
+                                    </Label.Triggers>
+                                </Label>
+                                <Label Grid.Row="0" Grid.Column="9" Text="{Binding BookedOn, StringFormat='{0:dd MMM, yyyy}'}" TextColor="Indigo" HorizontalOptions="Start" />
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
