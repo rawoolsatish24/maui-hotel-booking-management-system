@@ -3,10 +3,19 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Tools & Technologies](#tools--technologies)
 - [Screenshots](#screenshots)
 
 ## Description
 <p align="justify" width="100%">The <strong>Hotel Booking Management System</strong> is a comprehensive MAUI C# project designed for efficient hotel booking. This system offers a seamless user experience with features such as user authentication, account management, and booking functionalities. Users can create accounts, login securely, and manage their bookings with ease. The system also includes an Admin page with privileges to approve or reject booking requests. Additionally, the project implements a range of color themes, including Light, Dark, Red, and Pink, to suit user preferences. With a focus on simplicity and functionality, this project aims to provide a user-friendly platform for hotel booking management.</p>
+
+## Tools & Technologies
+
+- MAUI
+- C#
+- SQLite
+- ASP.NET Core Open API
+- XAML
 
 ## Screenshots
 
